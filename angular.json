@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "trangchu-doan5"
+    }
+  },
+  "defaultProject": "trangchu-doan5",
+  "cli": {
+    "analytics": "0a50b447-fa4b-40e3-8aed-277e7207aef3"
+  }
 }
