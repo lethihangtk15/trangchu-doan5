@@ -1,28 +1,27 @@
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { FooterComponent } from './shared/footer/footer.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
+
 import { MainComponent } from './main/main.component';
+
 import { HttpClientModule } from '@angular/common/http';
-// import { CartComponent } from './customer/cart/cart.component';
-// import { CheckoutComponent } from './customer/checkout/checkout.component';
-// import { LoginComponent } from './customer/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CartComponent } from './customer/cart/cart.component';
+import { CheckoutComponent } from './customer/checkout/checkout.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HeaderComponent } from './shared/header/header.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-    // NotFoundComponent,
     MainComponent,
-    // ChitietComponent,
-    // ListComponent,
-    // CartComponent,
-    // CheckoutComponent,
-    // LoginComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

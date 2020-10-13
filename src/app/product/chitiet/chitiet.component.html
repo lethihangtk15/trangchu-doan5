@@ -1,863 +1,874 @@
-<div class="breadcrumb">
-	<div class="container">
-		<div class="breadcrumb-inner">
-			<ul class="list-inline list-unstyled">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Clothing</a></li>
-				<li class='active'>Floral Print Buttoned</li>
-			</ul>
-		</div><!-- /.breadcrumb-inner -->
-	</div><!-- /.container -->
-</div><!-- /.breadcrumb -->
-<div class="body-content outer-top-xs">
-	<div class='container'>
-		<div class='row single-product'>
-			<div class='col-md-3 sidebar'>
-				<div class="sidebar-module-container">
-				<div class="home-banner outer-top-n">
-          <img src="assets/images/banners/LHS-banner.jpg" alt="Image">
-        </div>
+<!-- Begin Hiraola's Breadcrumb Area -->
+<div class="breadcrumb-area">
+  <div class="container">
+      <div class="breadcrumb-content">
+          <h2>Thông tin chi tiết sản phẩm</h2>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="active">Detail Product</li>
+          </ul>
+      </div>
+  </div>
+</div>
+<!-- Hiraola's Breadcrumb Area End Here -->
 
-    	<!-- ============================================== HOT DEALS ============================================== -->
-        <div class="sidebar-widget hot-deals wow fadeInUp outer-top-vs">
-          <h3 class="section-title">hot deals</h3>
-          <div class="owl-carousel sidebar-carousel custom-carousel owl-theme outer-top-xs">
-
-                                    <div class="item">
-                  <div class="products">
-                    <div class="hot-deal-wrapper">
-                      <div class="image">
-                        <img src="assets/images/hot-deals/p5.jpg" alt="">
+<!-- Begin Hiraola's Single Product Area -->
+<div class="sp-area">
+  <div class="container">
+      <div class="sp-nav">
+          <div class="row">
+              <div class="col-lg-5 col-md-5">
+                  <div class="sp-img_area">
+                      <div class="zoompro-border">
+                          <img class="zoompro" src="assets/images/product/{{item.product_image}}" data-zoom-image="assets/images/single-product/large-size/1.jpg" alt="Hiraola's Product Image" />
                       </div>
-                      <div class="sale-offer-tag"><span>35%<br>off</span></div>
-                      <div class="timing-wrapper">
-                        <div class="box-wrapper">
-                          <div class="date box">
-                            <span class="key">120</span>
-                            <span class="value">Days</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper">
-                          <div class="hour box">
-                            <span class="key">20</span>
-                            <span class="value">HRS</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper">
-                          <div class="minutes box">
-                            <span class="key">36</span>
-                            <span class="value">MINS</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper hidden-md">
-                          <div class="seconds box">
-                            <span class="key">60</span>
-                            <span class="value">SEC</span>
-                          </div>
-                        </div>
+                      <div id="gallery" class="sp-img_slider">
+                          <a class="active" data-image="assets/images/single-product/large-size/1.jpg" data-zoom-image="assets/images/single-product/large-size/1.jpg">
+                              <img src="assets/images/single-product/small-size/1.jpg" alt="Hiraola's Product Image">
+                          </a>
+                          <a data-image="assets/images/single-product/large-size/2.jpg" data-zoom-image="assets/images/single-product/large-size/2.jpg">
+                              <img src="assets/images/single-product/small-size/2.jpg" alt="Hiraola's Product Image">
+                          </a>
+                          <a data-image="assets/images/single-product/large-size/3.jpg" data-zoom-image="assets/images/single-product/large-size/3.jpg">
+                              <img src="assets/images/single-product/small-size/3.jpg" alt="Hiraola's Product Image">
+                          </a>
+                          <a data-image="assets/images/single-product/large-size/4.jpg" data-zoom-image="assets/images/single-product/large-size/4.jpg">
+                              <img src="assets/images/single-product/small-size/4.jpg" alt="Hiraola's Product Image">
+                          </a>
+                          <a data-image="assets/images/single-product/large-size/5.jpg" data-zoom-image="assets/images/single-product/large-size/5.jpg">
+                              <img src="assets/images/single-product/small-size/5.jpg" alt="Hiraola's Product Image">
+                          </a>
+                          <a data-image="assets/images/single-product/large-size/6.jpg" data-zoom-image="assets/images/single-product/large-size/6.jpg">
+                              <img src="assets/images/single-product/small-size/6.jpg" alt="Hiraola's Product Image">
+                          </a>
                       </div>
-                    </div><!-- /.hot-deal-wrapper -->
-
-                    <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                      <div class="rating rateit-small"></div>
-
-                      <div class="product-price">
-                        <span class="price">
-                          $600.00
-                        </span>
-
-                          <span class="price-before-discount">$800.00</span>
-
-                      </div><!-- /.product-price -->
-
-                    </div><!-- /.product-info -->
-
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-
-                        <div class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                            <i class="fa fa-shopping-cart"></i>
-                          </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-
-                        </div>
-
-                      </div><!-- /.action -->
-                    </div><!-- /.cart -->
                   </div>
+              </div>
+              <div class="col-lg-7 col-md-7">
+                  <div class="sp-content">
+                      <div class="sp-heading">
+                          <h5><a href="#">{{item.product_name}}</a></h5>
+                      </div>
+                      <span class="reference">Reference: demo_1</span>
+                      <div class="rating-box">
+                          <ul>
+                              <li><i class="fa fa-star-of-david"></i></li>
+                              <li><i class="fa fa-star-of-david"></i></li>
+                              <li><i class="fa fa-star-of-david"></i></li>
+                              <li><i class="fa fa-star-of-david"></i></li>
+                              <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                          </ul>
+                      </div>
+                      <div class="sp-essential_stuff">
+                          <ul>
+                              <li>EX Tax: <a href="javascript:void(0)"><span>{{item.product_price}}</span></a></li>
+                              <li>Brands <a href="javascript:void(0)">Buxton</a></li>
+                              <li>Product Code: <a href="javascript:void(0)">Product 16</a></li>
+                              <li>Reward Points: <a href="javascript:void(0)">600</a></li>
+                              <li>Availability: <a href="javascript:void(0)">In Stock</a></li>
+                          </ul>
+                      </div>
+                      <div class="product-size_box">
+                          <span>Size</span>
+                          <select class="myniceselect nice-select">
+                              <option value="1">S</option>
+                              <option value="2">M</option>
+                              <option value="3">L</option>
+                              <option value="4">XL</option>
+                          </select>
+                      </div>
+                      <div class="quantity">
+                          <label>Quantity</label>
+                          <div class="cart-plus-minus">
+                              <input class="cart-plus-minus-box" value="1" type="text">
+                              <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                              <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
+                          </div>
+                      </div>
+                      <div class="qty-btn_area">
+                          <ul>
+                              <li><a class="qty-cart_btn" href="cart.html">Add To Cart</a></li>
+                              <li><a class="qty-wishlist_btn" href="wishlist.html" data-toggle="tooltip" title="Add To Wishlist"><i class="ion-android-favorite-outline"></i></a></li>
+                              <li><a class="qty-compare_btn" href="compare.html" data-toggle="tooltip" title="Compare This Product"><i class="ion-ios-shuffle-strong"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="hiraola-tag-line">
+                          <h6>Tags:</h6>
+                          <a href="javascript:void(0)">Ring</a>,
+                          <a href="javascript:void(0)">Necklaces</a>,
+                          <a href="javascript:void(0)">Braid</a>
+                      </div>
+                      <div class="hiraola-social_link">
+                          <ul>
+                              <li class="facebook">
+                                  <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank" title="Facebook">
+                                      <i class="fab fa-facebook"></i>
+                                  </a>
+                              </li>
+                              <li class="twitter">
+                                  <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter">
+                                      <i class="fab fa-twitter-square"></i>
+                                  </a>
+                              </li>
+                              <li class="youtube">
+                                  <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank" title="Youtube">
+                                      <i class="fab fa-youtube"></i>
+                                  </a>
+                              </li>
+                              <li class="google-plus">
+                                  <a href="https://www.plus.google.com/discover" data-toggle="tooltip" target="_blank" title="Google Plus">
+                                      <i class="fab fa-google-plus"></i>
+                                  </a>
+                              </li>
+                              <li class="instagram">
+                                  <a href="https://rss.com/" data-toggle="tooltip" target="_blank" title="Instagram">
+                                      <i class="fab fa-instagram"></i>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
                   </div>
-                                  <div class="item">
-                  <div class="products">
-                    <div class="hot-deal-wrapper">
-                      <div class="image">
-                        <img src="assets/images/products/p6.jpg" alt="">
-                      </div>
-                      <div class="sale-offer-tag"><span>35%<br>off</span></div>
-                      <div class="timing-wrapper">
-                        <div class="box-wrapper">
-                          <div class="date box">
-                            <span class="key">120</span>
-                            <span class="value">Days</span>
-                          </div>
-                        </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Hiraola's Single Product Area End Here -->
 
-                                <div class="box-wrapper">
-                          <div class="hour box">
-                            <span class="key">20</span>
-                            <span class="value">HRS</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper">
-                          <div class="minutes box">
-                            <span class="key">36</span>
-                            <span class="value">MINS</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper hidden-md">
-                          <div class="seconds box">
-                            <span class="key">60</span>
-                            <span class="value">SEC</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div><!-- /.hot-deal-wrapper -->
-
-                    <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                      <div class="rating rateit-small"></div>
-
-                      <div class="product-price">
-                        <span class="price">
-                          $600.00
-                        </span>
-
-                          <span class="price-before-discount">$800.00</span>
-
-                      </div><!-- /.product-price -->
-
-                    </div><!-- /.product-info -->
-
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-
-                        <div class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                            <i class="fa fa-shopping-cart"></i>
-                          </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-
-                        </div>
-
-                      </div><!-- /.action -->
-                    </div><!-- /.cart -->
+<!-- Begin Hiraola's Single Product Tab Area -->
+<div class="hiraola-product-tab_area-2 sp-product-tab_area">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="sp-product-tab_nav ">
+                  <div class="product-tab">
+                      <ul class="nav product-menu">
+                          <li><a class="active" data-toggle="tab" href="#description"><span>Description</span></a>
+                          </li>
+                          <li><a data-toggle="tab" href="#specification"><span>Specification</span></a></li>
+                          <li><a data-toggle="tab" href="#reviews"><span>Reviews (1)</span></a></li>
+                      </ul>
                   </div>
+                  <div class="tab-content hiraola-tab_content">
+                      <div id="description" class="tab-pane active show" role="tabpanel">
+                          <div class="product-description">
+                              <ul>
+                                  <li>
+                                      <strong>Karat Gold</strong>
+                                      <span>24K gold is called pure gold or fine gold. (99.99% pure) The color of fine
+                                      gold is a bright yellow with a bit of orange. Some say it is too soft for
+                                      jewelry application, but high karat gold is commonly worn in some parts of
+                                      the world, and it is growing in popularity in designer jewelry. Most will
+                                      prefer karat golds for their engagement rings, because of the needed
+                                      hardness to hold a gemstone.</span>
+                                  </li>
+                                  <li>
+                                      <strong>Gold Colors</strong>
+                                      <span>The most popular color is yellow which is made by adding silver and some
+                                      copper. The metals are melted together to form an alloy of the desired color
+                                      and karat. It is very important that all the ingredients are pure and that
+                                      the amounts of each are weighed very accurately to prevent porosity, which
+                                      weakens the alloy.</span>
+                                  </li>
+                                  <li>
+                                      <strong>White alloys</strong>
+                                      <span>There are two kinds of White Gold: Nickel based and Palladium based. Some
+                                      people are allergic to Nickel, so Palladium white gold is a good
+                                      alternative. Palladium white gold is the only legal alloy in Europe. It also
+                                      self burnishes and keeps a polish.</span>
+                                  </li>
+                                  <li>
+                                      <strong>The Most Expensive Diamond Color</strong>
+                                      <span>D colored diamonds are the rarest and most expensive of diamonds within
+                                      the D-Z scale. Certain fancy colored diamonds will command the highest
+                                      prices overall, and these will be discussed in separate tutorial. Many
+                                      people enjoy diamonds in the near colorless range G-J, as they find a
+                                      balance of size, clarity, and price to meet their needs.</span>
+                                  </li>
+
+                              </ul>
+                          </div>
+                      </div>
+                      <div id="specification" class="tab-pane" role="tabpanel">
+                          <table class="table table-bordered specification-inner_stuff">
+                              <tbody>
+                                  <tr>
+                                      <td colspan="2"><strong>Memory</strong></td>
+                                  </tr>
+                              </tbody>
+                              <tbody>
+                                  <tr>
+                                      <td>test 1</td>
+                                      <td>8gb</td>
+                                  </tr>
+                              </tbody>
+                              <tbody>
+                                  <tr>
+                                      <td colspan="2"><strong>Processor</strong></td>
+                                  </tr>
+                              </tbody>
+                              <tbody>
+                                  <tr>
+                                      <td>No. of Cores</td>
+                                      <td>1</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div id="reviews" class="tab-pane" role="tabpanel">
+                          <div class="tab-pane active" id="tab-review">
+                              <form class="form-horizontal" id="form-review">
+                                  <div id="review">
+                                      <table class="table table-striped table-bordered">
+                                          <tbody>
+                                              <tr>
+                                                  <td style="width: 50%;"><strong>Customer</strong></td>
+                                                  <td class="text-right">25/04/2019</td>
+                                              </tr>
+                                              <tr>
+                                                  <td colspan="2">
+                                                      <p>Good product! Thank you very much</p>
+                                                      <div class="rating-box">
+                                                          <ul>
+                                                              <li><i class="fa fa-star-of-david"></i></li>
+                                                              <li><i class="fa fa-star-of-david"></i></li>
+                                                              <li><i class="fa fa-star-of-david"></i></li>
+                                                              <li><i class="fa fa-star-of-david"></i></li>
+                                                              <li><i class="fa fa-star-of-david"></i></li>
+                                                          </ul>
+                                                      </div>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  <h2>Write a review</h2>
+                                  <div class="form-group required">
+                                      <div class="col-sm-12 p-0">
+                                          <label>Your Email <span class="required">*</span></label>
+                                          <input class="review-input" type="email" name="con_email" id="con_email" required>
+                                      </div>
+                                  </div>
+                                  <div class="form-group required second-child">
+                                      <div class="col-sm-12 p-0">
+                                          <label class="control-label">Share your opinion</label>
+                                          <textarea class="review-textarea" name="con_message" id="con_message"></textarea>
+                                          <div class="help-block"><span class="text-danger">Note:</span> HTML is not
+                                              translated!</div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group last-child required">
+                                      <div class="col-sm-12 p-0">
+                                          <div class="your-opinion">
+                                              <label>Your Rating</label>
+                                              <span>
+                                              <select class="star-rating">
+                                                  <option value="1">1</option>
+                                                  <option value="2">2</option>
+                                                  <option value="3">3</option>
+                                                  <option value="4">4</option>
+                                                  <option value="5">5</option>
+                                              </select>
+                                          </span>
+                                          </div>
+                                      </div>
+                                      <div class="hiraola-btn-ps_right">
+                                          <a href="javascript:void(0)" class="hiraola-btn hiraola-btn_dark">Continue</a>
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
                   </div>
-                                  <div class="item">
-                  <div class="products">
-                    <div class="hot-deal-wrapper">
-                      <div class="image">
-                        <img src="assets/images/products/p7.jpg" alt="">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Hiraola's Single Product Tab Area End Here -->
+
+<!-- Begin Hiraola's Product Area Two -->
+<div class="hiraola-product_area hiraola-product_area-2 ">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+
+              <div class="hiraola-section_title">
+                  <h4>Special Offer</h4>
+              </div>
+
+          </div>
+          <div class="col-lg-12">
+              <div class="hiraola-product_slider-3">
+
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-1.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-2.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Pendant, Made of White Pl...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£120.80</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                      <div class="sale-offer-tag"><span>35%<br>off</span></div>
-                      <div class="timing-wrapper">
-                        <div class="box-wrapper">
-                          <div class="date box">
-                            <span class="key">120</span>
-                            <span class="value">Days</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper">
-                          <div class="hour box">
-                            <span class="key">20</span>
-                            <span class="value">HRS</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper">
-                          <div class="minutes box">
-                            <span class="key">36</span>
-                            <span class="value">MINS</span>
-                          </div>
-                        </div>
-
-                                <div class="box-wrapper hidden-md">
-                          <div class="seconds box">
-                            <span class="key">60</span>
-                            <span class="value">SEC</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div><!-- /.hot-deal-wrapper -->
-
-                    <div class="product-info text-left m-t-20">
-                      <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-                      <div class="rating rateit-small"></div>
-
-                      <div class="product-price">
-                        <span class="price">
-                          $600.00
-                        </span>
-
-                          <span class="price-before-discount">$800.00</span>
-
-                      </div><!-- /.product-price -->
-
-                    </div><!-- /.product-info -->
-
-                    <div class="cart clearfix animate-effect">
-                      <div class="action">
-
-                        <div class="add-cart-button btn-group">
-                          <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                            <i class="fa fa-shopping-cart"></i>
-                          </button>
-                          <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-
-                        </div>
-
-                      </div><!-- /.action -->
-                    </div><!-- /.cart -->
                   </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-3.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-4.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Swirl 1 Medium Pendant La...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£120.80</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-
-
-            </div><!-- /.sidebar-widget -->
-        </div>
-<!-- ============================================== HOT DEALS: END ============================================== -->
-
-
-<!-- ============================================== Testimonials============================================== -->
-        <div class="sidebar-widget  wow fadeInUp outer-top-vs ">
-          <div id="advertisement" class="advertisement">
-                <div class="item">
-                    <div class="avatar"><img src="assets/images/testimonials/member1.png" alt="Image"></div>
-            <div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
-            <div class="clients_author">John Doe	<span>Abc Company</span>	</div><!-- /.container-fluid -->
-                </div><!-- /.item -->
-
-                <div class="item">
-                  <div class="avatar"><img src="assets/images/testimonials/member3.png" alt="Image"></div>
-            <div class="testimonials"><em>"</em>Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
-            <div class="clients_author">Stephen Doe	<span>Xperia Designs</span>	</div>
-                </div><!-- /.item -->
-
-                <div class="item">
-                    <div class="avatar"><img src="assets/images/testimonials/member2.png" alt="Image"></div>
-            <div class="testimonials"><em>"</em> Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.<em>"</em></div>
-            <div class="clients_author">Saraha Smith	<span>Datsun &amp; Co</span>	</div><!-- /.container-fluid -->
-                </div><!-- /.item -->
-
-            </div><!-- /.owl-carousel -->
-        </div>
-<!-- ============================================== Testimonials: END ============================================== -->
-
-				</div>
-			</div><!-- /.sidebar -->
-			<div class='col-md-9'>
-        <div class="detail-block">
-          <div class="row  wow fadeInUp">
-            <div class="col-xs-12 col-sm-6 col-md-5 gallery-holder">
-              <div class="product-item-holder size-big single-product-gallery small-gallery">
-
-                <div id="owl-single-product">
-                  <div class="single-product-gallery-item" id="slide1">
-                      <a data-lightbox="image-1" data-title="Gallery" href="assets/images/products/p8.jpg">
-                          <img class="img-responsive" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p8.jpg" />
-                      </a>
-                  </div><!-- /.single-product-gallery-item -->
-
-                  <div class="single-product-gallery-item" id="slide2">
-                      <a data-lightbox="image-1" data-title="Gallery" href="assets/images/products/p9.jpg">
-                          <img class="img-responsive" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p9.jpg" />
-                      </a>
-                  </div><!-- /.single-product-gallery-item -->
-
-                  <div class="single-product-gallery-item" id="slide3">
-                      <a data-lightbox="image-1" data-title="Gallery" href="assets/images/products/p10.jpg">
-                          <img class="img-responsive" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p10.jpg" />
-                      </a>
-                  </div><!-- /.single-product-gallery-item -->
-
-                  <div class="single-product-gallery-item" id="slide4">
-                      <a data-lightbox="image-1" data-title="Gallery" href="assets/images/products/p11.jpg">
-                          <img class="img-responsive" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p11.jpg" />
-                      </a>
-                  </div><!-- /.single-product-gallery-item -->
-                </div><!-- /.single-product-slider -->
-
-
-                <div class="single-product-gallery-thumbs gallery-thumbs">
-                    <div id="owl-single-product-thumbnails">
-                        <div class="item">
-                            <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="1" href="#slide1">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p17.jpg" />
-                            </a>
-                        </div>
-
-                        <div class="item">
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide2">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p18.jpg"/>
-                            </a>
-                        </div>
-                        <div class="item">
-
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="3" href="#slide3">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p19.jpg" />
-                            </a>
-                        </div>
-                        <div class="item">
-
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="4" href="#slide4">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p20.jpg" />
-                            </a>
-                        </div>
-                        <div class="item">
-
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="5" href="#slide5">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p21.jpg" />
-                            </a>
-                        </div>
-                        <div class="item">
-
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="6" href="#slide6">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p22.jpg" />
-                            </a>
-                        </div>
-                        <div class="item">
-
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="7" href="#slide7">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p23.jpg" />
-                            </a>
-                        </div>
-                        <div class="item">
-
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="8" href="#slide8">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p24.jpg" />
-                            </a>
-                        </div>
-                        <div class="item">
-
-                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="9" href="#slide9">
-                                <img class="img-responsive" width="85" alt="" src="assets/images/blank.gif" data-echo="assets/images/products/p25.jpg" />
-                            </a>
-                        </div>
-                    </div><!-- /#owl-single-product-thumbnails -->
-                </div><!-- /.gallery-thumbs -->
-              </div><!-- /.single-product-gallery -->
-            </div><!-- /.gallery-holder -->
-            <div class='col-sm-6 col-md-7 product-info-block'>
-              <div class="product-info">
-                <h1 class="name">Floral Print Buttoned</h1>
-                <div class="rating-reviews m-t-20">
-                  <div class="row">
-                    <div class="col-sm-3">
-                      <div class="rating rateit-small"></div>
-                    </div>
-                    <div class="col-sm-8">
-                      <div class="reviews">
-                        <a href="#" class="lnk">(13 Reviews)</a>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-5.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-6.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker-2">Sale</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Work Lamp Silver Proin he...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£135.20</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.rating-reviews -->
-
-                <div class="stock-container info-container m-t-10">
-                  <div class="row">
-                    <div class="col-sm-2">
-                      <div class="stock-box">
-                        <span class="label">Tình trạng :</span>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-7.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-8.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Work Lamp Silver Proin he...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£135.20</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                    <div class="col-sm-9">
-                      <div class="stock-box">
-                        <span class="value">Còn hàng</span>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-9.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-1.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker-2">Sale</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Vitra Sunburst Clock pret...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£1199.60</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.stock-container -->
-
-                <div class="description-container m-t-20">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div><!-- /.description-container -->
-
-                <div class="price-container info-container m-t-20">
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="price-box">
-                        <span class="price">$800.00</span>
-                        <span class="price-strike">$900.00</span>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-2.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-9.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Light Inverted Pendant Qu...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£110.00</span>
+                                      <span class="old-price">£110.00</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
 
-                    <div class="col-sm-6">
-                      <div class="favorite-button m-t-10">
-                        <a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Wishlist" href="#">
-                            <i class="fa fa-heart"></i>
-                        </a>
-                        <a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="Add to Compare" href="#">
-                          <i class="fa fa-signal"></i>
-                        </a>
-                        <a class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="E-mail" href="#">
-                            <i class="fa fa-envelope"></i>
-                        </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Hiraola's Product Area Two End Here -->
+
+<!-- Begin Hiraola's Product Area Two -->
+<div class="hiraola-product_area hiraola-product_area-2 section-space_add">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+
+              <div class="hiraola-section_title">
+                  <h4>Related Products</h4>
+              </div>
+
+          </div>
+          <div class="col-lg-12">
+              <div class="hiraola-product_slider-3">
+
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-9.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-1.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker-2">Sale</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Vitra Sunburst Clock pret...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£1199.60</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                  </div><!-- /.row -->
-                </div><!-- /.price-container -->
-
-                <div class="quantity-container info-container">
-                  <div class="row">
-
-                    <div class="col-sm-2">
-                      <span class="label">Số lượng :</span>
-                    </div>
-
-                    <div class="col-sm-2">
-                      <div class="cart-quantity">
-                        <div class="quant-input">
-                          <div class="arrows">
-                            <div class="arrow plus gradient"><span class="ir"><i class="icon fa fa-sort-asc"></i></span></div>
-                              <div class="arrow minus gradient"><span class="ir"><i class="icon fa fa-sort-desc"></i></span></div>
-                            </div>
-                            <input type="text" value="1">
-                        </div>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-2.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-9.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Light Inverted Pendant Qu...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£110.00</span>
+                                      <span class="old-price">£110.00</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-5.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-3.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">JWDA Penant Lamp Brshed</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£602.00</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-7.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-6.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Suspensions Aplomb Large ...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£602.00</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-5.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-6.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker-2">Sale</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Work Lamp Silver Proin he...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£135.20</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                          <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
+                  <!-- Begin Hiraola's Slide Item Area -->
+                  <div class="slide-item">
+                      <div class="single_product">
+                          <div class="product-img">
+                              <a href="single-product.html">
+                                  <img class="primary-img" src="assets/images/product/medium-size/1-7.jpg" alt="Hiraola's Product Image">
+                                  <img class="secondary-img" src="assets/images/product/medium-size/1-8.jpg" alt="Hiraola's Product Image">
+                              </a>
+                              <span class="sticker">New</span>
+                              <div class="add-actions">
+                                  <ul>
+                                      <li><a class="hiraola-add_cart" href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a></li>
+                                      <li><a class="hiraola-add_compare" href="compare.html" data-toggle="tooltip" data-placement="top" title="Compare This Product"><i
+                                              class="ion-ios-shuffle-strong"></i></a></li>
+                                      <li class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="hiraola-product_content">
+                              <div class="product-desc_info">
+                                  <h6><a class="product-name" href="single-product.html">Work Lamp Silver Proin he...</a></h6>
+                                  <div class="price-box">
+                                      <span class="new-price">£135.20</span>
+                                  </div>
+                                  <div class="additional-add_action">
+                                      <ul>
+                                          <li><a class="hiraola-add_compare" href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                  class="ion-android-favorite-outline"></i></a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="rating-box">
+                                      <ul>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                          <li><i class="fa fa-star-of-david"></i></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Hiraola's Slide Item Area End Here -->
 
-                    <div class="col-sm-7">
-                      <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
-                    </div>
-
-                  </div><!-- /.row -->
-                </div><!-- /.quantity-container -->
-              </div><!-- /.product-info -->
-            </div><!-- /.col-sm-7 -->
-          </div><!-- /.row -->
-        </div>
-
-				<div class="product-tabs inner-bottom-xs  wow fadeInUp">
-					<div class="row">
-						<div class="col-sm-3">
-							<ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
-								<li class="active"><a data-toggle="tab" href="#description">DESCRIPTION</a></li>
-								<li><a data-toggle="tab" href="#tags">TAGS</a></li>
-							</ul><!-- /.nav-tabs #product-tabs -->
-            </div>
-
-						<div class="col-sm-9">
-							<div class="tab-content">
-								<div id="description" class="tab-pane in active">
-									<div class="product-tab">
-										<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div>
-								</div><!-- /.tab-pane -->
-
-								<div id="tags" class="tab-pane">
-									<div class="product-tag">
-										<h4 class="title">Product Tags</h4>
-										<form role="form" class="form-inline form-cnt">
-											<div class="form-container">
-												<div class="form-group">
-													<label for="exampleInputTag">Add Your Tags: </label>
-													<input type="email" id="exampleInputTag" class="form-control txt">
-												</div>
-												<button class="btn btn-upper btn-primary" type="submit">ADD TAGS</button>
-											</div><!-- /.form-container -->
-										</form><!-- /.form-cnt -->
-
-										<form role="form" class="form-inline form-cnt">
-											<div class="form-group">
-												<label>&nbsp;</label>
-												<span class="text col-md-offset-3">Use spaces to separate tags. Use single quotes (') for phrases.</span>
-											</div>
-										</form><!-- /.form-cnt -->
-									</div><!-- /.product-tab -->
-								</div><!-- /.tab-pane -->
-
-							</div><!-- /.tab-content -->
-						</div><!-- /.col -->
-					</div><!-- /.row -->
-				</div><!-- /.product-tabs -->
-
-				<!-- ============================================== UPSELL PRODUCTS ============================================== -->
-<section class="section featured-product wow fadeInUp">
-	<h3 class="section-title">upsell products</h3>
-	<div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
-
-		<div class="item item-carousel">
-			<div class="products">
-        <div class="product">
-          <div class="product-image">
-            <div class="image">
-              <a href="detail.html"><img  src="assets/images/products/p1.jpg" alt=""></a>
-            </div><!-- /.image -->
-            <div class="tag sale"><span>sale</span></div>
-          </div><!-- /.product-image -->
-
-          <div class="product-info text-left">
-            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-            <div class="rating rateit-small"></div>
-            <div class="description"></div>
-            <div class="product-price">
-              <span class="price">$650.99</span>
-              <span class="price-before-discount">$ 800</span>
-            </div><!-- /.product-price -->
-		      </div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				    <div class="action">
-              <ul class="list-unstyled">
-                <li class="add-cart-button btn-group">
-                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                </li>
-
-                <li class="lnk wishlist">
-                  <a class="add-to-cart" href="detail.html" title="Wishlist">
-                    <i class="icon fa fa-heart"></i>
-                  </a>
-                </li>
-
-                <li class="lnk">
-                  <a class="add-to-cart" href="detail.html" title="Compare"><i class="fa fa-signal"></i></a>
-                </li>
-              </ul>
-				    </div><!-- /.action -->
-			    </div><!-- /.cart -->
-			  </div><!-- /.product -->
-
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-
-		<div class="item item-carousel">
-			<div class="products">
-	      <div class="product">
-          <div class="product-image">
-            <div class="image">
-              <a href="detail.html"><img  src="assets/images/products/p2.jpg" alt=""></a>
-            </div><!-- /.image -->
-            <div class="tag sale"><span>sale</span></div>
-          </div><!-- /.product-image -->
-
-          <div class="product-info text-left">
-            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-            <div class="rating rateit-small"></div>
-            <div class="description"></div>
-              <div class="product-price">
-                <span class="price">$650.99</span>
-                <span class="price-before-discount">$ 800</span>
-              </div><!-- /.product-price -->
-		      </div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-            <div class="action">
-              <ul class="list-unstyled">
-                <li class="add-cart-button btn-group">
-                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                </li>
-
-                <li class="lnk wishlist">
-                  <a class="add-to-cart" href="detail.html" title="Wishlist"><i class="icon fa fa-heart"></i></a>
-                </li>
-
-                <li class="lnk">
-                  <a class="add-to-cart" href="detail.html" title="Compare"><i class="fa fa-signal"></i></a>
-                </li>
-              </ul>
-            </div><!-- /.action -->
-			    </div><!-- /.cart -->
-			  </div><!-- /.product -->
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-
-		<div class="item item-carousel">
-			<div class="products">
-	      <div class="product">
-          <div class="product-image">
-            <div class="image">
-              <a href="detail.html"><img  src="assets/images/products/p3.jpg" alt=""></a>
-            </div><!-- /.image -->
-            <div class="tag hot"><span>hot</span></div>
-          </div><!-- /.product-image -->
-
-          <div class="product-info text-left">
-            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-            <div class="rating rateit-small"></div>
-            <div class="description"></div>
-            <div class="product-price">
-              <span class="price">$650.99</span>
-              <span class="price-before-discount">$ 800</span>
-            </div><!-- /.product-price -->
-          </div><!-- /.product-info -->
-
-					<div class="cart clearfix animate-effect">
-				    <div class="action">
-              <ul class="list-unstyled">
-                <li class="add-cart-button btn-group">
-                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                </li>
-                <li class="lnk wishlist">
-                  <a class="add-to-cart" href="detail.html" title="Wishlist">
-                    <i class="icon fa fa-heart"></i>
-                  </a>
-                </li>
-                <li class="lnk">
-                  <a class="add-to-cart" href="detail.html" title="Compare">
-                    <i class="fa fa-signal"></i>
-                  </a>
-                </li>
-              </ul>
-				    </div><!-- /.action -->
-			    </div><!-- /.cart -->
-			  </div><!-- /.product -->
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-
-		<div class="item item-carousel">
-			<div class="products">
-	      <div class="product">
-          <div class="product-image">
-            <div class="image">
-              <a href="detail.html"><img  src="assets/images/products/p4.jpg" alt=""></a>
-            </div><!-- /.image -->
-            <div class="tag new"><span>new</span></div>
-          </div><!-- /.product-image -->
-          <div class="product-info text-left">
-            <h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-            <div class="rating rateit-small"></div>
-            <div class="description"></div>
-            <div class="product-price">
-              <span class="price">$650.99</span>
-              <span class="price-before-discount">$ 800</span>
-
-            </div><!-- /.product-price -->
-
-          </div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-            <div class="action">
-              <ul class="list-unstyled">
-                <li class="add-cart-button btn-group">
-                  <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-                    <i class="fa fa-shopping-cart"></i>
-                  </button>
-                  <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-                </li>
-                <li class="lnk wishlist">
-                  <a class="add-to-cart" href="detail.html" title="Wishlist">
-                    <i class="icon fa fa-heart"></i>
-                  </a>
-                </li>
-                <li class="lnk">
-                  <a class="add-to-cart" href="detail.html" title="Compare">
-                      <i class="fa fa-signal"></i>
-                  </a>
-                </li>
-              </ul>
-            </div><!-- /.action -->
-			    </div><!-- /.cart -->
-			  </div><!-- /.product -->
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-
-		<div class="item item-carousel">
-			<div class="products">
-
-	<div class="product">
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img  src="assets/images/blank.gif" data-echo="assets/images/products/p5.jpg" alt=""></a>
-			</div><!-- /.image -->
-
-			                        <div class="tag hot"><span>hot</span></div>
-		</div><!-- /.product-image -->
-
-
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-
-			</div><!-- /.product-price -->
-
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-
-						</li>
-
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-
-		<div class="item item-carousel">
-			<div class="products">
-
-	<div class="product">
-		<div class="product-image">
-			<div class="image">
-				<a href="detail.html"><img  src="assets/images/blank.gif" data-echo="assets/images/products/p6.jpg" alt=""></a>
-			</div><!-- /.image -->
-
-			<div class="tag new"><span>new</span></div>
-		</div><!-- /.product-image -->
-
-
-		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
-			<div class="rating rateit-small"></div>
-			<div class="description"></div>
-
-			<div class="product-price">
-				<span class="price">
-					$650.99				</span>
-										     <span class="price-before-discount">$ 800</span>
-
-			</div><!-- /.product-price -->
-
-		</div><!-- /.product-info -->
-					<div class="cart clearfix animate-effect">
-				<div class="action">
-					<ul class="list-unstyled">
-						<li class="add-cart-button btn-group">
-							<button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-								<i class="fa fa-shopping-cart"></i>
-							</button>
-							<button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-
-						</li>
-
-		                <li class="lnk wishlist">
-							<a class="add-to-cart" href="detail.html" title="Wishlist">
-								 <i class="icon fa fa-heart"></i>
-							</a>
-						</li>
-
-						<li class="lnk">
-							<a class="add-to-cart" href="detail.html" title="Compare">
-							    <i class="fa fa-signal"></i>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.action -->
-			</div><!-- /.cart -->
-			</div><!-- /.product -->
-
-			</div><!-- /.products -->
-		</div><!-- /.item -->
-			</div><!-- /.home-owl-carousel -->
-</section><!-- /.section -->
-<!-- ============================================== UPSELL PRODUCTS : END ============================================== -->
-
-			</div><!-- /.col -->
-			<div class="clearfix"></div>
-		</div><!-- /.row -->
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
-<div id="brands-carousel" class="logo-slider wow fadeInUp">
-
-		<div class="logo-slider-inner">
-			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
-				<div class="item m-t-15">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand1.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item m-t-10">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand2.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand3.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand4.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand5.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand6.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand2.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand4.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand1.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-
-				<div class="item">
-					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand5.png" src="assets/images/blank.gif" alt="">
-					</a>
-				</div><!--/.item-->
-		    </div><!-- /.owl-carousel #logo-slider -->
-		</div><!-- /.logo-slider-inner -->
-
-</div><!-- /.logo-slider -->
-<!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
-</div><!-- /.body-content -->
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Hiraola's Product Area Two End Here -->
