@@ -165,7 +165,7 @@
                               <li *ngIf="mn.children != null"><a >{{mn.category_name}}</a>
                                 <ul class="hm-dropdown">
                                   <ng-container *ngFor="let m of mn.children">
-                                    <li><a href="my-account.html">{{m.category_name}}</a></li>
+                                    <li><a [routerLink]="['/product/list',m.category_id]">{{m.category_name}}</a></li>
                                   </ng-container>
                                 </ul>
                             </li>

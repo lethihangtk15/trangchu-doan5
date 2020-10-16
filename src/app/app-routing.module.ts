@@ -1,3 +1,4 @@
+import { ListComponent } from './product/list/list.component';
 import { ChitietComponent } from './product/chitiet/chitiet.component';
 import { MainComponent } from './main/main.component';
 import { Component, NgModule } from '@angular/core';
@@ -34,9 +35,13 @@ const routes: Routes = [
 
 
    {
-     path: 'chitiet/:id',
+     path: 'detail',
      component: ChitietComponent,
    },
+   {
+    path: 'list',
+    component: ListComponent,
+  },
    {
      path: 'login',
      component: LoginComponent,

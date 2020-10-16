@@ -1,22 +1,32 @@
-import { ListComponent } from './list/list.component';
 import { ChitietComponent } from './chitiet/chitiet.component';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SharedModule } from '../shared/shared.module';
+import { ListComponent } from './list/list.component';
+// import { ListBrandComponent } from './list-brand/list-brand.component';
+
+
 const routes: Routes = [
   {
     path: 'chitiet/:id',
     component: ChitietComponent,
   },
+
   {
     path: 'list/:id',
     component: ListComponent,
   },
- ];
+  // {
+  //   path: 'list-brand/:id',
+  //   component: ListBrandComponent,
+  // },
+];
+
+
 @NgModule({
-  declarations: [ChitietComponent,ListComponent],
+  declarations: [ChitietComponent, ListComponent],
   imports: [
-    SharedModule,
+    CommonModule,
     RouterModule.forChild(routes),
   ]
 })
