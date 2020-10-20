@@ -450,14 +450,15 @@
                             <div class="hiraola-paginatoin-area">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <ul class="hiraola-pagination-box">
+                                      <ngb-pagination style="float: right;" [collectionSize]="list_item[0].total" [page]="size" [(page)]="index" [maxSize]="10" [rotate]="true" (pageChange)="loadPage($event)"></ngb-pagination>
+                                        <!-- <ul class="hiraola-pagination-box">
                                             <li class="active"><a href="javascript:void(0)">1</a></li>
                                             <li><a href="javascript:void(0)">2</a></li>
                                             <li><a href="javascript:void(0)">3</a></li>
                                             <li><a class="Next" href="javascript:void(0)"><i
                                                     class="ion-ios-arrow-right"></i></a></li>
                                             <li><a class="Next" href="javascript:void(0)">>|</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="product-select-box">
