@@ -1,5 +1,5 @@
-import { BaseComponent } from './../../lib/base-component';
-import { Component, OnInit, Injector } from '@angular/core';
+import { Component, Injector, OnInit } from '@angular/core';
+import { BaseComponent } from 'src/app/lib/base-component';
 
 @Component({
   selector: 'app-cart',
@@ -30,11 +30,9 @@ export class CartComponent extends BaseComponent implements OnInit {
     alert('Xóa thành công');
   }
 
-
   addQty(item, quantity){
     item.quantity =  quantity;
     item.money =  Number.parseInt(item.quantity) *  item.product_price;
     this._cart.addQty(item);
   }
-
 }

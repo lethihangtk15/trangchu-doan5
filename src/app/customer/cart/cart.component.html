@@ -2,40 +2,39 @@
  <div class="breadcrumb-area">
   <div class="container">
       <div class="breadcrumb-content">
-          <!-- <h2>Other</h2> -->
           <ul>
               <li><a href="index.html">Home</a></li>
-              <li class="active">Cart</li>
+              <li>Giỏ Hàng</li>
           </ul>
       </div>
   </div>
 </div>
 <!-- Hiraola's Breadcrumb Area End Here -->
-<!-- Begin Hiraola's Cart Area -->
+
 <div class="hiraola-cart-area">
   <div class="container">
       <div class="row">
           <div class="col-12">
-              <form action="">
-                  <div class="table-content table-responsive">
-                      <table class="table cart-table" id="shopping-cart-table">
+
+                  <div class="table-content">
+                      <table class="table table-bordered">
                           <thead>
                               <tr>
-                                  <th class="hiraola-product-remove">Xoá</th>
-                                  <th class="">Hình ảnh</th>
-                                  <th class="cart-product-name">Sản phẩm</th>
-                                  <th class="hiraola-product-price">Đơn giá</th>
-                                  <th class="hiraola-product-quantity">Số lượng</th>
-                                  <th class="hiraola-product-subtotal">Thành tiền</th>
+                                  <th>Xoá</th>
+                                  <th>Hình Ảnh</th>
+                                  <th>Sản Phẩm</th>
+                                  <th>Đơn Giá</th>
+                                  <th>Số Lượng</th>
+                                  <th>Thành Tiền</th>
                               </tr>
                           </thead>
                           <tbody>
                               <tr *ngFor="let c of items">
-                                  <td class=""><a (click)="_cart.deleteItem(c.product_id)" ><i class="fa fa-trash"
+                                  <td><a title="Remove item" (click)="_cart.deleteItem(c.product_id)"><i class="fa fa-trash"
                                       title="Remove"></i></a></td>
-                                  <td class=""><a ><img style="width: 200px;height: 200px;" src="assets/images/product/{{c.product_image}}" alt=""></a></td>
-                                  <td class=""><a >{{c.product_name}}</a></td>
-                                  <td class=""><span class="amount">{{c.product_price}}</span></td>
+                                  <td><a><img src="assets/images/product/{{c.product_image}}" width="100px" height="115px"></a></td>
+                                  <td><a>{{c.product_name}}</a></td>
+                                  <td><span class="amount">{{c.product_price | currency:"VND"}}</span></td>
                                   <td class="quantity">
                                       <label>Quantity</label>
                                       <div class="cart_quantity_button">
@@ -44,6 +43,7 @@
                                   </td>
                                   <td class="product-subtotal"><span class="amount">{{ c.money | currency:"VND"}}</span></td>
                               </tr>
+
                           </tbody>
                       </table>
                   </div>
@@ -63,7 +63,7 @@
                   <div class="row">
                       <div class="col-md-5 ml-auto">
                           <div class="cart-page-total">
-                              <h2>Tổng tiền</h2>
+                              <h2>Tổng Tiền</h2>
                               <ul>
                                   <li>Subtotal <span>{{total | currency:"VND"}}</span></li>
                                   <li>Total <span>{{total | currency:"VND"}}</span></li>
@@ -72,9 +72,9 @@
                           </div>
                       </div>
                   </div>
-              </form>
+
           </div>
       </div>
   </div>
 </div>
-<!-- Hiraola's Cart Area End Here -->
+
