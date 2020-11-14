@@ -1,6 +1,7 @@
-import { BaseComponent } from './../../lib/base-component';
-import { Component, OnInit, Injector } from '@angular/core';
-
+import { Component, Injector, OnInit } from '@angular/core';
+import 'rxjs/add/observable/combineLatest';
+import 'rxjs/add/operator/takeUntil';
+import { BaseComponent } from '../../lib/base-component';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -20,9 +21,9 @@ export class HeaderComponent extends BaseComponent implements OnInit {
     this._cart.items.subscribe((res) => {
       this.total = res? res.length:0;
     });
-    // this._api.get('/api/brand/get-brand').takeUntil(this.unsubscribe).subscribe(res => {
-    //   this.menus1 = res;
-    // });
+    this._api.get('/api/brand/get-brand').takeUntil(this.unsubscribe).subscribe(res => {
+      this.menus1 = res;
+    });
   }
 
 }

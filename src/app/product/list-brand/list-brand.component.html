@@ -5,7 +5,7 @@
           <h2>Shop</h2>
           <ul>
               <li><a href="index.html">Home</a></li>
-              <li class="active">Danh Mục Sản Phẩm</li>
+              <li class="active">Thương Hiệu</li>
           </ul>
       </div>
   </div>
@@ -21,12 +21,12 @@
 
                   <div class="hiraola-sidebar_categories">
                       <div class="hiraola-categories_title">
-                          <h5>Danh Mục Sản phẩm</h5>
+                          <h5>Thương Hiệu</h5>
                       </div>
                       <ul class="sidebar-checkbox_list">
                         <ng-container *ngFor="let m of mn.children">
                           <li>
-                              <a [routerLink]="['/product/list',m.category_id]">{{m.category_name}}</a>
+                              <a [routerLink]="['/product/list-brand',m.brand_id]">{{m.brand_name}}</a>
                           </li>
                         </ng-container>
                       </ul>
@@ -59,7 +59,7 @@
                   </div>
               </div>
               <div class="shop-product-wrap grid gridview-3 row">
-                <ng-container *ngFor="let item of list">
+                <ng-container *ngFor="let item of list_brand">
                   <div class="col-lg-4">
                       <div class="slide-item">
                           <div class="single_product">
@@ -182,3 +182,4 @@
   </div>
 </div>
 <!-- Hiraola's Content Wrapper Area End Here -->
+<p>list-brand works!</p>

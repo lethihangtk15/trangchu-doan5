@@ -16,9 +16,9 @@
   <div class="container">
       <div class="row">
           <div class="col-12">
-              <form action="javascript:void(0)">
+              <form action="">
                   <div class="table-content table-responsive">
-                      <table class="table">
+                      <table class="table cart-table" id="shopping-cart-table">
                           <thead>
                               <tr>
                                   <th class="hiraola-product-remove">Xoá</th>
@@ -30,7 +30,7 @@
                               </tr>
                           </thead>
                           <tbody>
-                              <tr  *ngFor="let c of items">
+                              <tr *ngFor="let c of items">
                                   <td class=""><a (click)="_cart.deleteItem(c.product_id)" ><i class="fa fa-trash"
                                       title="Remove"></i></a></td>
                                   <td class=""><a ><img style="width: 200px;height: 200px;" src="assets/images/product/{{c.product_image}}" alt=""></a></td>
@@ -63,12 +63,12 @@
                   <div class="row">
                       <div class="col-md-5 ml-auto">
                           <div class="cart-page-total">
-                              <h2>Cart totals</h2>
+                              <h2>Tổng tiền</h2>
                               <ul>
                                   <li>Subtotal <span>{{total | currency:"VND"}}</span></li>
                                   <li>Total <span>{{total | currency:"VND"}}</span></li>
                               </ul>
-                              <a href="javascript:void(0)">Proceed to checkout</a>
+                              <a routerLink="/customer/checkout"><button class="button btn-proceed-checkout" type="button"><span>Thanh Toán</span></button></a>
                           </div>
                       </div>
                   </div>

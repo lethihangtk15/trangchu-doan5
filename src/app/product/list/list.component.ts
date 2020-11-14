@@ -25,7 +25,7 @@ export class ListComponent extends BaseComponent implements OnInit {
     this.pageSize = 5;
     this._route.params.subscribe(params => {
       this.category_id = params['id'];
-      this._api.post('/api/product/search', {
+      this._api.post('/api/product/search-category', {
         page: this.page,
         pageSize: this.pageSize,
         category_id: this.category_id}).takeUntil(this.unsubscribe).subscribe(res => {
@@ -43,7 +43,7 @@ export class ListComponent extends BaseComponent implements OnInit {
   loadPage(page) {
     this._route.params.subscribe(params => {
       let id = params['id'];
-      this._api.post('/api/product/search', {
+      this._api.post('/api/product/search-category', {
         page: page,
         pageSize: this.pageSize,
         category_id: id}).takeUntil(this.unsubscribe).subscribe(res => {
